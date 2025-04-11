@@ -44,3 +44,26 @@ else:
 
 
 print("Результат:", result)
+
+
+#ДЗ 3.2. Перемістити елемент у списку
+
+def move_last_to_first(lst):
+
+    if len(lst) < 2:
+        return lst
+
+
+    return [lst[-1]] + lst[:-1]
+
+
+
+examples = [
+    [12, 3, 4, 10],
+    [1],
+    [],
+    [12, 3, 4, 10, 8]
+]
+
+for example in examples:
+    print(example, "=>", move_last_to_first(example))
