@@ -33,3 +33,6 @@ name = input("Enter name: ")
 age = int(input("Enter age: "))
 
 print("Hello, %s, %d!" % (name,age))
+
+
+print(chr(65))
