@@ -16,54 +16,61 @@
 #ДЗ 3.1. Найпростіший калькулятор
 
 
-num1 = float(input("Введіть перше число: "))
+# num1 = float(input("Введіть перше число: "))
 
 
-operation = input("Введіть дію (+, -, *, /): ")
+# operation = input("Введіть дію (+, -, *, /): ")
 
 
-num2 = float(input("Введіть друге число: "))
+# num2 = float(input("Введіть друге число: "))
 
 
-if operation == '+':
-    result = num1 + num2
-elif operation == '-':
-    result = num1 - num2
-elif operation == '*':
-    result = num1 * num2
-elif operation == '/':
+# if operation == '+':
+#     result = num1 + num2
+# elif operation == '-':
+#     result = num1 - num2
+# elif operation == '*':
+#     result = num1 * num2
+# elif operation == '/':
 
-    if num2 == 0:
-        print("Помилка: ділення на нуль!")
-        exit()
-    else:
-        result = num1 / num2
-else:
-    print("Помилка: невідома операція!")
-    exit()
+#     if num2 == 0:
+#         print("Помилка: ділення на нуль!")
+#         exit()
+#     else:
+#         result = num1 / num2
+# else:
+#     print("Помилка: невідома операція!")
+#     exit()
 
 
-print("Результат:", result)
+# print("Результат:", result)
 
 
 #ДЗ 3.2. Перемістити елемент у списку
 
-def move_last_to_first(lst):
+def move_last_to_first(input_list):
+  
 
-    if len(lst) < 2:
-        return lst
+  if len(input_list) < 2:
+    return input_list
+
+  last_element = input_list[-1]
 
 
-    return [lst[-1]] + lst[:-1]
+  remaining_elements = input_list[:-1]
 
+  result_list = [last_element] + remaining_elements
 
+  return result_list
 
-examples = [
-    [12, 3, 4, 10],
-    [1],
-    [],
-    [12, 3, 4, 10, 8]
-]
+list1 = [12, 3, 4, 10]
+print(f"{list1} => {move_last_to_first(list1)}")
 
-for example in examples:
-    print(example, "=>", move_last_to_first(example))
+list2 = [1]
+print(f"{list2} => {move_last_to_first(list2)}")
+
+list3 = []
+print(f"{list3} => {move_last_to_first(list3)}")
+
+list4 = [12, 3, 4, 10, 8]
+print(f"{list4} => {move_last_to_first(list4)}")
