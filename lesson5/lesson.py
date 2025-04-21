@@ -87,40 +87,58 @@
 
 # ДЗ 5.2. Модифікувати калькулятор
 
-print("Вітаю у калькуляторі!")
+# print("Вітаю у калькуляторі!")
 
-while True:
+# while True:
 
-    num1 = float(input("Введіть перше число: "))
-    operation = input("Введіть дію (+, -, *, /): ")
-    num2 = float(input("Введіть друге число: "))
+#     num1 = float(input("Введіть перше число: "))
+#     operation = input("Введіть дію (+, -, *, /): ")
+#     num2 = float(input("Введіть друге число: "))
 
     
-    if operation == '+':
-        result = num1 + num2
-        print("Результат:", result)
-    elif operation == '-':
-        result = num1 - num2
-        print("Результат:", result)
-    elif operation == '*':
-        result = num1 * num2
-        print("Результат:", result)
-    elif operation == '/':
-        if num2 == 0:
-            print("Помилка: ділення на нуль!")
+#     if operation == '+':
+#         result = num1 + num2
+#         print("Результат:", result)
+#     elif operation == '-':
+#         result = num1 - num2
+#         print("Результат:", result)
+#     elif operation == '*':
+#         result = num1 * num2
+#         print("Результат:", result)
+#     elif operation == '/':
+#         if num2 == 0:
+#             print("Помилка: ділення на нуль!")
             
-        else:
-            result = num1 / num2
-            print("Результат:", result)
-    else:
-        print("Помилка: невідома операція!")
+#         else:
+#             result = num1 / num2
+#             print("Результат:", result)
+#     else:
+#         print("Помилка: невідома операція!")
         
 
     
-    continue_input = input("Бажаєте продовжити? (yes/y): ").lower() 
+#     continue_input = input("Бажаєте продовжити? (yes/y): ").lower() 
 
 
-    if continue_input not in ['yes', 'y']:
-        break
+#     if continue_input not in ['yes', 'y']:
+#         break
 
-print("Роботу калькулятора завершено.")
+# print("Роботу калькулятора завершено.")
+
+# ДЗ 5.3. hashtag
+
+import re
+
+def generate_hashtag(user_input):
+    
+    cleaned = re.sub(r'[^\w\s]', '', user_input)
+    
+   
+    hashtag = '#' + ''.join(word.capitalize() for word in cleaned.split())
+    
+    
+    return hashtag[:140] if len(hashtag) > 140 else hashtag
+
+print(generate_hashtag('Python Community'))  # #PythonCommunity
+print(generate_hashtag('i like python community!'))  # #ILikePythonCommunity
+print(generate_hashtag('Should, I. subscribe? Yes!'))  # #ShouldISubscribeYes
