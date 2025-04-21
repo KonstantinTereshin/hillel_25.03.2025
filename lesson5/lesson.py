@@ -139,6 +139,6 @@ def generate_hashtag(user_input):
     
     return hashtag[:140] if len(hashtag) > 140 else hashtag
 
-print(generate_hashtag('Python Community'))  # #PythonCommunity
-print(generate_hashtag('i like python community!'))  # #ILikePythonCommunity
-print(generate_hashtag('Should, I. subscribe? Yes!'))  # #ShouldISubscribeYes
+print(generate_hashtag('Python Community'))  
+print(generate_hashtag('i like python community!'))  
+print(generate_hashtag('Should, I. subscribe? Yes!'))  
