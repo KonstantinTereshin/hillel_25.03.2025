@@ -1,0 +1,12 @@
+# def sum_func():
+#     print("Second")
+
+#     print("First")
+# sum_func()    
+
+# def sum_func(a: int, b: int) -> int:
+
+#     return  a+b
+
+# print(sum_func(2,2))
+
