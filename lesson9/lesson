@@ -1,0 +1,17 @@
+def generator():
+    yield 1
+    yield 2
+    yield 3
+    yield 4
+gen = generator()
+
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print("________________________")
+
+gen_cycle = generator()
+
+for x in gen_cycle:
+    print(x)
