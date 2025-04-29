@@ -17,13 +17,13 @@
 # print(divide(10, 2))  # 5.0
 # print(divide(10, 0))   # AssertionError: Делитель не может быть нулём!
 
-# file = open("text.txt", "r")  # Только чтение
-# content = file.read()
-# print(content)
-# file.close()
+file = open("text.txt", "r")  # Только чтение
+content = file.read()
+print(content)
+file.close()
 
-# with open("text.txt", "r") as file:
-#     content = file.read()
+# with open(r"D:\hillel\hillel_25.03.2025\lesson10\text.txt", "a") as file:
+#     content = file.write("123")
 #     print(content)
 
 # class Car:
