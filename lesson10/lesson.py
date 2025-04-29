@@ -1,3 +1,33 @@
+# def binari_search(itr, target):
+#     low, high = 0, len(itr) - 1
+
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if target == itr [mid]:
+#             return mid
+#         elif itr[mid] < target:
+#             low = mid + 1
+#         else:
+#             high = mid - 1
+
+# def divide(a, b):
+#     assert b != 0, "Делитель не может быть нулём!"
+#     return a / b
+
+# print(divide(10, 2))  # 5.0
+# print(divide(10, 0))   # AssertionError: Делитель не может быть нулём!
+
+# file = open("text.txt", "r")  # Только чтение
+# content = file.read()
+# print(content)
+# file.close()
+
+with open("text.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+
+
 #ДЗ 10.1. Генераторна функція
 
 # def pow(x):
@@ -42,11 +72,11 @@
 
 #ДЗ 10.3. Перевірити чи є парним чи ні
 
-def is_even(digit):
-    """ Перевірка чи є парним число """
-    return digit % 2 == 0
+# def is_even(digit):
+#     """ Перевірка чи є парним число """
+#     return digit % 2 == 0
 
-assert is_even(2) == True, 'Test1'
-assert is_even(5) == False, 'Test2'
-assert is_even(0) == True, 'Test3'
-print('OK')
+# assert is_even(2) == True, 'Test1'
+# assert is_even(5) == False, 'Test2'
+# assert is_even(0) == True, 'Test3'
+# print('OK')
