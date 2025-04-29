@@ -22,11 +22,22 @@
 # print(content)
 # file.close()
 
-with open("text.txt", "r") as file:
-    content = file.read()
-    print(content)
+# with open("text.txt", "r") as file:
+#     content = file.read()
+#     print(content)
 
+# class Car:
+#     count_of_wheels = 4
 
+#     def __init__(self, brand: str, probig):
+#         self.brand = brand
+#         self.probig = probig
+
+#     def stert(self):
+#         print("Start engine")
+
+# car = Car()    
+# print(car.count_of_wheels)
 
 #ДЗ 10.1. Генераторна функція
 
