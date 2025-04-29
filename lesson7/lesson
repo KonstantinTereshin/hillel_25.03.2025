@@ -40,15 +40,29 @@
 
 #ДЗ 7.3. Пошук підрядка
 
-def second_index(text, some_str):
-    first_occurrence = text.find(some_str)  
-    if first_occurrence == -1:
-        return None  
-    second_occurrence = text.find(some_str, first_occurrence + 1)  
-    return second_occurrence if second_occurrence != -1 else None
+# def second_index(text, some_str):
+#     first_occurrence = text.find(some_str)  
+#     if first_occurrence == -1:
+#         return None  
+#     second_occurrence = text.find(some_str, first_occurrence + 1)  
+#     return second_occurrence if second_occurrence != -1 else None
 
-assert second_index("sims", "s") == 3, 'Test1' 
-assert second_index("find the river", "e") == 12, 'Test2' 
-assert second_index("hi", "h") is None, 'Test3' 
-assert second_index("Hello, hello", "lo") == 10, 'Test4' 
+# assert second_index("sims", "s") == 3, 'Test1' 
+# assert second_index("find the river", "e") == 12, 'Test2' 
+# assert second_index("hi", "h") is None, 'Test3' 
+# assert second_index("Hello, hello", "lo") == 10, 'Test4' 
+# print('ОК')
+
+#ДЗ 7.4. Пошук спільних елементів
+
+def common_elements():
+    
+    multiples_of_3 = [x for x in range(100) if x % 3 == 0]
+    
+    multiples_of_5 = [x for x in range(100) if x % 5 == 0]
+    
+    common = set(multiples_of_3) & set(multiples_of_5)
+    return common
+
+assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
 print('ОК')
