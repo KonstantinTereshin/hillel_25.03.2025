@@ -37,6 +37,8 @@
 
 # print(chr(65))
 
+
+
 # ДЗ 5.1. Ім'я змінної
 
 # import string
@@ -85,6 +87,8 @@
 # print(f"get value => {is_valid_variable_name('get value')}")
 # print(f"get!value => {is_valid_variable_name('get!value')}")
 
+
+
 # ДЗ 5.2. Модифікувати калькулятор
 
 # print("Вітаю у калькуляторі!")
@@ -124,6 +128,8 @@
 #         break
 
 # print("Роботу калькулятора завершено.")
+
+
 
 # ДЗ 5.3. hashtag
 

@@ -5,6 +5,8 @@
 
 # test_func("1",)    
 
+
+
 #ДЗ 8.1. Додати 1 до числа
 
 # def add_one(some_list):
@@ -21,6 +23,8 @@
 # assert add_one([9]) == [1, 0], 'Test4'
 # print("ОК")
 
+
+
 #ДЗ 8.2. Паліандром
 
 # import re
@@ -36,6 +40,8 @@
 # assert is_palindrome('a.') == True, 'Test3'
 # assert is_palindrome('aurora') == False, 'Test4'
 # print("ОК")
+
+
 
 #ДЗ 8.3. Унікальне число
 

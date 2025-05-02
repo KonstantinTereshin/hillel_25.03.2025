@@ -10,6 +10,8 @@
 
 # print(sum_func(2,2))
 
+
+
 #ДЗ 7.1. Вітання
 
 # def say_hi(name, age):
@@ -18,6 +20,8 @@
 # assert say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
 # assert say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old", 'Test2'
 # print('ОК')
+
+
 
 #ДЗ 7.2. Модифікувати рядок
 
@@ -38,6 +42,8 @@
 # assert correct_sentence("greetings, friends.") == "Greetings, friends.", 'Test5'
 # print('ОК')
 
+
+
 #ДЗ 7.3. Пошук підрядка
 
 # def second_index(text, some_str):
@@ -52,6 +58,8 @@
 # assert second_index("hi", "h") is None, 'Test3' 
 # assert second_index("Hello, hello", "lo") == 10, 'Test4' 
 # print('ОК')
+
+
 
 #ДЗ 7.4. Пошук спільних елементів
 

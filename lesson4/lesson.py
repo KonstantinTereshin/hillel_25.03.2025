@@ -17,6 +17,8 @@
 # tup = (1, 2, 3, 4)
 # print(tup[0])
 
+
+
 # ДЗ 4.1. Перемістити всі нулі до кінця списку
 
 # def move_zeros_simple(lst):
@@ -46,6 +48,8 @@
 # list4 = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
 # print(f"{list4} -> {move_zeros_simple(list4)}")
 
+
+
 # ДЗ 4.2. Знайти суму елементів із парними індексами
 
 # def calculate_sum_and_multiply(data):
@@ -70,6 +74,8 @@
 # print(calculate_sum_and_multiply([1, 3, 5]))         
 # print(calculate_sum_and_multiply([6]))                
 # print(calculate_sum_and_multiply([]))   
+
+
 
 # ДЗ 4.3. Список із 3 елементів
 

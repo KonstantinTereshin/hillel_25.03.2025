@@ -29,6 +29,8 @@
 
 # print(hash("test"))  
 
+
+
 #ДЗ 6.1. Діапазон букв
 
 # import string
@@ -48,6 +50,8 @@
 # print(get_chars_between("a-a"))
 # print(get_chars_between("s-H"))
 # print(get_chars_between("a-A"))
+
+
 
 #ДЗ 6.2. Конвертер із числа в дату
 
@@ -89,6 +93,7 @@
 # print(f"8639999 -> {format_seconds_to_time(8639999)}")
 # print(f"22493 -> {format_seconds_to_time(22493)}")
 # print(f"7948799 -> {format_seconds_to_time(7948799)}")
+
 
 
 #ДЗ 6.3. Добуток чисел

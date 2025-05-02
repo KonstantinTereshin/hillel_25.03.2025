@@ -39,6 +39,8 @@ file.close()
 # car = Car()    
 # print(car.count_of_wheels)
 
+
+
 #ДЗ 10.1. Генераторна функція
 
 # def pow(x):
@@ -63,6 +65,7 @@ file.close()
 # print('OK')
 
 
+
 #ДЗ 10.2. Знайти перше слово
 
 # import re
@@ -80,6 +83,7 @@ file.close()
 # assert first_word("hi") == "hi", 'Test5'
 # assert first_word("Hello.World") == "Hello", 'Test6'
 # print('OK')
+
 
 #ДЗ 10.3. Перевірити чи є парним чи ні
 
