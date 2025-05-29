@@ -17,3 +17,4 @@ if __name__ == "__main__":
         print(gr)  # Only one student
     except GroupFullError as e:
         print(f"GroupFullError: {e}")
+ 
